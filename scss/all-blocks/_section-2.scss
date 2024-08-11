@@ -1,0 +1,41 @@
+// Element-2
+
+.element-inner-top {
+	width: 220px;
+	transform: translate(159%, -180%);
+}
+
+.element-inner-center {
+	width: 120px;
+	transform: translate(-60%, -45%);
+}
+
+.element-inner-body {
+	width: 240px;
+	height: 400px;
+	transform: translate(48%, 0%);
+}
+
+.element-inner-oval {
+	width: 70px;
+	transform: translate(-270%, -120%);
+}
+
+.element-inner-bottom {
+	width: 250px;
+	transform: translate(-140%, 90%);
+}
+
+.element-2-box {
+	width: 200px;
+	height: 290px;
+	margin-bottom: 10px;
+}
+
+#left-box {
+	left: 10%;
+}
+
+#right-box {
+	right: 10%;
+}

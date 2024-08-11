@@ -1,0 +1,48 @@
+.transform-element {
+	width: 500px;
+	height: 700px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+}
+
+.transform-element-1 {
+	position: fixed;
+	bottom: 0px;
+	transform: translateY(-30%);
+}
+
+#element-1 {
+	// background-color: #2ecc71;
+	left: 60%;
+	transform: translate(-50%, -30%);
+}
+
+#element-2 {
+	// background-color: #9b59b6;
+	left: -50%;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	// background-color: white;
+	position: absolute;
+	bottom: -240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+#left-box {
+	left: 20%;
+}
+
+#right-box {
+	right: 20%;
+}

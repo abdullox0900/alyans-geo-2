@@ -1,0 +1,36 @@
+#section-1 {
+	background-color: #c4c6db;
+	z-index: 1;
+}
+
+#section-2 {
+	background-color: #fff;
+	transform: translateX(100%);
+	border-radius: 47px;
+	z-index: 2;
+}
+
+#section-3 {
+	background-color: #f4f7ff;
+	transform: translateY(100%);
+	z-index: 3;
+	overflow: visible;
+}
+
+#section-4 {
+	background-color: #fff;
+	transform: translateY(100%);
+	z-index: 4;
+}
+
+#section-5 {
+	background-color: #fff;
+	transform: translateY(100%);
+	z-index: 5;
+}
+
+#section-7 {
+	background-color: #8e44ad;
+	transform: translateY(100%);
+	z-index: 7;
+}
