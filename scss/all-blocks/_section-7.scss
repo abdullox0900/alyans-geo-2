@@ -1,5 +1,70 @@
 #section-7 {
-	background-color: #8e44ad;
+	background-image: url('../../assets/img/section-7-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	transform: translateY(100%);
 	z-index: 7;
+	overflow: hidden;
+	/* Qo'shildi */
+}
+
+#section-7-top-element {
+	width: 450px;
+	height: 1000px;
+	position: absolute;
+	top: -90%;
+	/* O'zgartirildi: faqat 10% ko'rinadi */
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+}
+
+.section-7-bottom-element {
+	width: 870px;
+	height: 330px;
+	border-radius: 30px;
+	background-color: #ffffff;
+	// opacity: 0;d
+	/* Qo'shildi: boshida ko'rinmaydi */
+}
+
+.section-7-bottom-element-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(90%);
+	z-index: 10;
+}
+
+.footer-top {
+	position: absolute;
+	padding: 150px;
+	bottom: -88%;
+	z-index: 10;
+	width: 100%;
+	height: 675px;
+	border-radius: 30px;
+}
+
+.section-7-bg-center {
+	position: absolute;
+	bottom: -1%;
+	z-index: 1;
+}
+
+.section-7-bg-left {
+	position: absolute;
+	left: -10%;
+	bottom: -15%;
+	z-index: 2;
+}
+
+.section-7-bg-right {
+	position: absolute;
+	right: -1%;
+	bottom: -15%;
+	z-index: 2;
 }

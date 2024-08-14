@@ -1,5 +1,10 @@
 #section-1 {
-	background-color: #c4c6db;
+	background-color: #f4f7ff;
+	background-image: url('../assets/svg/bg-i-1.svg'),
+		url('../assets/svg/bg-i-2.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left top, top right;
 	z-index: 1;
 }
 
@@ -27,6 +32,10 @@
 	background-color: #fff;
 	transform: translateY(100%);
 	z-index: 5;
+}
+
+#section-6 {
+	background-color: #f4f7ff;
 }
 
 #section-7 {
