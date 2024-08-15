@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-mobile">
+            <div class="text-[#2C3041] mt-[15px] mb-[40px] text-[14px] mb-[40px]">
+                Екатеринбург, улица Цвиллинга 4, офис 401
+            </div>
+            <div class="flex items-center justify-between p-[15px] w-full bg-white rounded-[15px] mb-[35px]">
+                <img class="max-[430px]:w-[42px] max-[430px]:h-[42px]" src="./assets/svg/logo.svg" alt="logo">
+                <button id="menuToggle"
+                    class="flex items-center gap-[10px] p-[10px] bg-[#2C3041] text-white rounded-[10px]">
+                    <img src="./assets/icons/header-icon.svg" alt="logo">
+                    Меню
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="body-over"></div>
+    <nav id="mobileMenu" class="fixed inset-0 bg-[#2C3041] bg-opacity-0 invisible z-50">
+        <div
+            class="container-mobile pt-[140px] transform -translate-y-full transition-transform duration-300 ease-in-out">
+            <ul class="space-y-4 text-white">
+                <li><a href="#" class="block py-2 text-lg">Услуги</a></li>
+                <li><a href="#" class="block py-2 text-lg">Документация</a></li>
+                <li><a href="#" class="block py-2 text-lg">Реализованные проекты</a></li>
+                <li><a href="#" class="block py-2 text-lg">Партнерам</a></li>
+                <li><a href="#" class="block py-2 text-lg">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container-mobile">
+            <h1 class="title-content mb-[40px] max-[765px]:text-[30px] max-[550px]:text-[20px]">единый поставщик услуг в
+                сферах Инженерных
+                изысканийи <span
+                    class="relative top-[-10px] p-[8px] bg-[#FD4400] text-white text-[18px] rounded-[10px] max-[550px]:text-[11px]">Работаем
+                    по Урфо</span> проектировнания промышленных
+                обьектов</h1>
+            <div class="flex items-center justify-between max-[550px]:justify-end">
+                <img class="max-[550px]:absolute left-[-10%] max-[765px]:w-[350px] max-[765px]:h-[500px]"
+                    src="./assets/img/section-1-img.png" alt="" width="350" height="500">
+                <div class="relative z-[10]">
+                    <div class="section-right-box flex flex-col items-end gap-[50px] max-[765px]:gap-[20px] mb-[20px]">
+                        <div class="flex items-center gap-[50px] max-[765px]:gap-[20px]">
+                            <div
+                                class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[765px]:text-[14px]">
+                                <span
+                                    class="border-dash border-img-1 text-[32px] text-[#2C3041] max-[765px]:text-[20px]">3</span>
+                                Единицы техники
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-[16px] text-[#2C3041] text-right max-[765px]:text-[14px]">
+                                <span
+                                    class="border-dash border-img-2 text-[32px] text-[#2C3041] max-[765px]:text-[20px]">30+</span>
+                                <span class="w-[100px] max-[765px]:text-[14px]">лет на рынке</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col items-center text-[16px] w-[280px] text-[#2C3041] text-right max-[765px]:text-[14px]">
+                            <span
+                                class="inline-block border-img-3 w-[270px] border-dash text-[32px] text-[#2C3041] text-center max-[765px]:text-[20px]">Более
+                                70%</span>
+                            Клиентов приходят по рекомендации
+                        </div>
+                        <div class="flex items-center gap-[50px]">
+                            <div
+                                class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[765px]:text-[14px]">
+                                <span
+                                    class="border-dash border-img-4 text-[32px] text-[#2C3041] max-[765px]:text-[20px]">17</span>
+                                специалистов в НОПРИЗ
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[765px]:text-[14px]">
+                                <span
+                                    class="border-dash border-img-5 text-[32px] text-[#2C3041] max-[765px]:text-[20px]">8</span>
+                                лет на рынке
+                            </div>
+                        </div>
+                    </div>
+                    <h4
+                        class="w-[300px] text-right font-normal text-[18px] text-black max-[765px]:text-[14px] max-[430px]:text-[12px]">
+                        Уникальная система взаимодействия при реализации проекта
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const menuToggle = document.getElementById('menuToggle')
+        const bodyOver = document.getElementById('body-over')
+
+        menuToggle.addEventListener('click', () => {
+            bodyOver.style.backgroundColor = '#2C3041'
+        })
+
+        function redirectToDesktop() {
+            if (window.innerWidth > 1200) {
+                window.location.href = 'index.html'
+            }
+        }
+        window.onload = redirectToDesktop
+        window.onresize = redirectToDesktop
+    </script>
+</body>
+
+</html>

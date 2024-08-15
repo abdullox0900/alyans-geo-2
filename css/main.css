@@ -107,30 +107,6 @@ header {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 1300px) {
-  .header-res {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: white;
-  }
-  .header-res-menu {
-    display: flex;
-  }
-  .header-top-info {
-    display: none;
-  }
-}
-@media only screen and (max-width: 430px) {
-  .header-res-menu {
-    height: 42px;
-  }
-  .header-logo {
-    width: 42px;
-    height: 42px;
-  }
-}
 .main {
   flex-grow: 1;
 }

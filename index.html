@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>GSAP Scroll Animation - Version 26 with Section 3 Slider</title>
-    <style>
-
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
@@ -27,7 +24,7 @@
             <a href="#" class="header-logo">
                 <img src="./assets/svg/logo.svg" alt="logo" width="71" height="71">
             </a>
-            <nav class="header flex items-center justify-between w-[91%] px-[27px] bg-white rounded-[25px]">
+            <nav class="header nav flex items-center justify-between w-[91%] px-[27px] bg-white rounded-[25px]">
                 <div class="text-[#C4C6DB] font-light">Альянс гео</div>
                 <ul class="flex items-center gap-[35px]">
                     <li>
@@ -923,6 +920,15 @@
     </script>
     <script src="./js/common/section.js"></script>
     <script src="./js/media.js"></script>
+    <script>
+        function redirectToMobile() {
+            if (window.innerWidth <= 1200) {
+                window.location.href = 'mobile.html'
+            }
+        }
+        window.onload = redirectToMobile
+        window.onresize = redirectToMobile;
+    </script>
 </body>
 
 </html>

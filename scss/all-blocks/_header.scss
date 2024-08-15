@@ -22,31 +22,35 @@ header {
 	border-radius: 10px;
 }
 
-@media only screen and (max-width: 1300px) {
-	.header-res {
-		display: flex;
-		align-items: center;
-		padding: 15px;
-		border-radius: 20px;
-		background-color: white;
-	}
+// @media only screen and (max-width: 1300px) {
+// 	.nav {
+// 		display: none;
+// 	}
 
-	.header-res-menu {
-		display: flex;
-	}
+// 	.header-res {
+// 		display: flex;
+// 		align-items: center;
+// 		padding: 15px;
+// 		border-radius: 20px;
+// 		background-color: white;
+// 	}
 
-	.header-top-info {
-		display: none;
-	}
-}
+// 	.header-res-menu {
+// 		display: flex;
+// 	}
 
-@media only screen and (max-width: 430px) {
-	.header-res-menu {
-		height: 42px;
-	}
+// 	.header-top-info {
+// 		display: none;
+// 	}
+// }
 
-	.header-logo {
-		width: 42px;
-		height: 42px;
-	}
-}
+// @media only screen and (max-width: 430px) {
+// 	.header-res-menu {
+// 		height: 42px;
+// 	}
+
+// 	.header-logo {
+// 		width: 42px;
+// 		height: 42px;
+// 	}
+// }
