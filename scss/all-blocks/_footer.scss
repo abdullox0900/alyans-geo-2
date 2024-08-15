@@ -1,10 +1,12 @@
 #section-8 {
+	display: flex;
+	align-items: start;
 	background-color: #c4c6db;
 	transform: translateY(100%);
 	z-index: 8;
-	background-image: url('../../assets/svg/footer.svg');
-	background-size: contain;
-	background-position: left left, right right;
+	background-image: url('../../assets/svg/footer-bg-left.svg');
+	// background-size: contain;
+	// background-position: left left, right right;
 }
 
 .footer-top-wrapper {
