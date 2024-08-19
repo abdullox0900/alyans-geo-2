@@ -10,6 +10,14 @@ body {
     padding: 0 20px;
 }
 
+.mobile-header {
+    background-image: url('../assets/svg/bg-i-1.svg');
+}
+
+.section-1 {
+    background-image: url('../assets/svg/bg-i-1.svg');
+}
+
 .title-content {
     width: 85%;
     font-weight: 400;
@@ -118,5 +126,21 @@ body {
 
     #right-bottom {
         height: 400px;
+    }
+}
+
+/* Section-5 */
+#section-5-box {
+    width: 100%;
+    height: 100%;
+    padding: 50px 25px;
+    background-image: url('../../assets/img/section-5-bg.jpg');
+    background-size: cover;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 765px) {
+    #section-5-box {
+        background-image: url('../../assets/img/section-5-bg-mobile.png');
     }
 }
