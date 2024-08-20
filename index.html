@@ -8,17 +8,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>GSAP Scroll Animation - Version 26 with Section 3 Slider</title>
     <script>
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
+        (function() {
+            var mobile = 'mobile.html';
+            var desktop = 'desktop.html';
+            
+            function loadPage(url) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.documentElement.innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            }
     
-        var currentPage = window.location.pathname.split("/").pop();
-    
-        if (isMobile() && currentPage !== "mobile.html") {
-            window.location.replace("mobile.html");
-        } else if (!isMobile() && currentPage !== "index.html") {
-            window.location.replace("index.html");
-        }
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                loadPage(mobile);
+            } else {
+                loadPage(desktop);
+            }
+        })();
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
