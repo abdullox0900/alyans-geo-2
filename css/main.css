@@ -359,6 +359,14 @@ header {
   right: 12%;
 }
 
+@media only screen and (max-width: 1024px) {
+  #left-box {
+    display: none;
+  }
+  #right-box {
+    display: none;
+  }
+}
 .slider-element {
   width: 500px;
   height: 500px;
@@ -381,6 +389,11 @@ header {
   line-height: 60px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .slider-element {
+    display: none;
+  }
+}
 #section-4 {
   padding-top: 100px;
   box-sizing: border-box;
