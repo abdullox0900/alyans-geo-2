@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mobile.css">
-    <script>
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-    
-        if (isMobile()) {
-            window.location.replace("mobile.html");
-        } else {
-            window.location.replace("index.html");
-        }
-        </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script>
+        function redirectToMobile() {
+            if (window.innerWidth <= 1200) { 
+                window.location.href = 'mobile.html' 
+            } else {
+                window.location.href = 'desktop.html'
+            }
+
+        }
+        window.onload = redirectToMobile
+        window.onresize = redirectToMobile;
+    </script>
     <title>Document</title>
 </head>
 

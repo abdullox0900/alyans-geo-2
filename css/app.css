@@ -1,0 +1,17 @@
+/* Desktop versiya uchun stillar */
+.desktop-content {
+    display: block;
+}
+.mobile-content {
+    display: none;
+}
+
+/* Mobil versiya uchun stillar */
+@media screen and (max-width: 1200px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display: block;
+    }
+}
