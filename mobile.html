@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script>
+        function redirectToDesktop() {
+            if (window.innerWidth > 1200) {
+                window.location.href = 'index.html'
+            }
+        }
+        window.onload = redirectToDesktop
+        window.onresize = redirectToDesktop
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <title>Document</title>
@@ -680,15 +689,7 @@
         </ul>
     </section>
 
-    <script>
-        function redirectToDesktop() {
-            if (window.innerWidth > 1200) {
-                window.location.href = 'index.html'
-            }
-        }
-        window.onload = redirectToDesktop
-        window.onresize = redirectToDesktop
-    </script>
+    
 </body>
 
 </html>
