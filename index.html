@@ -86,38 +86,38 @@
             <div id="element-1" class="transform-element transform-element-1">
                 <img class="absolute bottom-0 section-1-element-1" src="./assets/img/section-1-img.png" alt="">
             </div>
-            <div class="section-right-box flex flex-col items-end gap-[50px] max-[1024px]:gap-[20px]">
+            <div class="section-right-box flex flex-col items-end gap-[50px] max-[1024px]:gap-[15px]">
                 <div class="flex items-center gap-[50px]">
                     <div
-                        class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[1024px]:text-[14px]">
+                        class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[1024px]:text-[11px]">
                         <span
-                            class="border-dash border-img-1 text-[32px] text-[#2C3041] max-[1024px]:text-[20px]">3</span>
+                            class="border-dash border-img-1 text-[32px] text-[#2C3041] max-[1024px]:text-[16px]">3</span>
                         Единицы техники
                     </div>
                     <div class="flex flex-col items-center text-[16px] text-[#2C3041] text-right">
                         <span
-                            class="border-dash border-img-2 text-[32px] text-[#2C3041] max-[1024px]:text-[20px]">30+</span>
-                        <span class="w-[100px] max-[1024px]:text-[14px]">лет на рынке</span>
+                            class="border-dash border-img-2 text-[32px] text-[#2C3041] max-[1024px]:text-[16px]">30+</span>
+                        <span class="w-[100px] max-[1024px]:text-[11px]">лет <br> на рынке</span>
                     </div>
                 </div>
                 <div
-                    class="flex flex-col items-center text-[16px] w-[280px] text-[#2C3041] text-right max-[1024px]:text-[14px]">
+                    class="flex flex-col items-center text-[16px] w-[280px] text-[#2C3041] text-right max-[1024px]:text-[11px]">
                     <span
-                        class="inline-block border-img-3 w-[270px] border-dash text-[32px] text-[#2C3041] text-center max-[1024px]:text-[20px]">Более
+                        class="inline-block border-img-3 w-[270px] border-dash text-[32px] text-[#2C3041] text-center max-[1024px]:text-[16px]">Более
                         70%</span>
                     Клиентов приходят по рекомендации
                 </div>
                 <div class="flex items-center gap-[50px]">
                     <div
-                        class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[1024px]:text-[14px]">
+                        class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[1024px]:text-[11px]">
                         <span
-                            class="border-dash border-img-4 text-[32px] text-[#2C3041] max-[1024px]:text-[20px]">17</span>
+                            class="border-dash border-img-4 text-[32px] text-[#2C3041] max-[1024px]:text-[14px]">17</span>
                         специалистов в НОПРИЗ
                     </div>
                     <div
-                        class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[1024px]:text-[14px]">
+                        class="flex flex-col items-center text-[16px] w-[100px] text-[#2C3041] text-right max-[1024px]:text-[11px]">
                         <span
-                            class="border-dash border-img-5 text-[32px] text-[#2C3041] max-[1024px]:text-[20px]">8</span>
+                            class="border-dash border-img-5 text-[32px] text-[#2C3041] max-[1024px]:text-[14px]">8</span>
                         лет на рынке
                     </div>
                 </div>
@@ -823,18 +823,18 @@
         })
             .to(".header", {
                 duration: 1,
-                y: "-30px",
+                y: () => window.innerWidth > 1024 ? "-30px" : 0,
                 backgroundColor: "#F4F7FF",
                 ease: "none",
             }, "<")
             .to(".header-logo", {
                 duration: 1,
-                y: "-30px",
+                y: () => window.innerWidth > 1024 ? "-30px" : 0,
                 ease: "none",
             }, "<")
             .to(".header-top", {
                 duration: 1,
-                y: "-50px",
+                y: () => window.innerWidth > 1024 ? "-50px" : 0,
                 ease: "none",
             }, "<")
             .to('.title', {
@@ -1104,7 +1104,6 @@
         //     duration: 1
         // }, "section7Start+=7")
 
-        smoother.effects(".slider-element", { speed: 0.8 });
 
 
 

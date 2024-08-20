@@ -301,7 +301,7 @@ header {
 @media only screen and (max-width: 1024px) {
   #section-1 .title-content {
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
   }
   #section-1 .subtitle {
     z-index: 10;
