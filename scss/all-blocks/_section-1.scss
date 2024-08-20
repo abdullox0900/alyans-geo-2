@@ -115,3 +115,30 @@
 .border-img-5 {
 	background-image: url('../../assets/svg/border-img-5.svg');
 }
+
+@media only screen and (max-width: 1024px) {
+	#section-1 {
+		.title-content {
+			width: 100%;
+			font-size: 24px;
+		}
+
+		.subtitle {
+			z-index: 10;
+			font-size: 10px;
+		}
+
+		.section-right-box {
+			width: 300px;
+			top: 45%;
+			left: 0px;
+		}
+
+		.transform-element-1 {
+			position: fixed;
+			width: 500px;
+			height: 700px;
+			transform: translateY(-30%);
+		}
+	}
+}
