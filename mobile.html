@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mobile.css">
     <script>
-        function redirectToDesktop() {
-            if (window.innerWidth > 1200) {
-                window.location.href = 'index.html'
-            }
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         }
-        window.onload = redirectToDesktop
-        window.onresize = redirectToDesktop
-    </script>
+    
+        if (isMobile()) {
+            window.location.replace("mobile.html");
+        } else {
+            window.location.replace("index.html");
+        }
+        </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <title>Document</title>

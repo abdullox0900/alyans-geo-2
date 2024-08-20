@@ -8,14 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>GSAP Scroll Animation - Version 26 with Section 3 Slider</title>
     <script>
-        function redirectToMobile() {
-            if (window.innerWidth <= 1200) {
-                window.location.href = 'mobile.html'
-            }
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         }
-        window.onload = redirectToMobile
-        window.onresize = redirectToMobile;
-    </script>
+    
+        var currentPage = window.location.pathname.split("/").pop();
+    
+        if (isMobile() && currentPage !== "mobile.html") {
+            window.location.replace("mobile.html");
+        } else if (!isMobile() && currentPage !== "index.html") {
+            window.location.replace("index.html");
+        }
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollSmoother.min.js"></script>
@@ -81,9 +85,7 @@
         </div>
 
     </header>
-    
-
-            <div class="container-gsap">
+<div class="container-gsap">
                 <section id="section-1">
                     <div class="title title-content">единый поставщик услуг в сферах Инженерных изысканийи
                         <span class="relative top-[-10px] p-[8px] bg-[#FD4400] text-white text-[18px] rounded-[10px]">Работаем
