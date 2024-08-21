@@ -40,23 +40,28 @@
 	right: 12%;
 }
 
+#mobile-left-right-box {
+	display: none;
+	transform: translateY(100%);
+	transition: all 1s ease;
+}
+
 @media only screen and (max-width: 1024px) {
 	#left-box {
-		width: 100%;
-		left: 0;
-		bottom: -50%;
+		display: none;
 	}
 
 	#right-box {
-		width: 100%;
-		left: 0;
-		bottom: -100%;
+		display: none;
+	}
+
+	#mobile-left-right-box {
+		display: inline-block;
 	}
 }
 
 @media only screen and (max-width: 550px) {
-	#left-box,
-	#right-box {
+	#mobile-left-right-box {
 		ul {
 			width: 100%;
 

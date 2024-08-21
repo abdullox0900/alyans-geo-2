@@ -366,38 +366,38 @@ header {
   right: 12%;
 }
 
+#mobile-left-right-box {
+  display: none;
+  transform: translateY(100%);
+  transition: all 1s ease;
+}
+
 @media only screen and (max-width: 1024px) {
   #left-box {
-    width: 100%;
-    left: 0;
-    bottom: -50%;
+    display: none;
   }
   #right-box {
-    width: 100%;
-    left: 0;
-    bottom: -100%;
+    display: none;
+  }
+  #mobile-left-right-box {
+    display: inline-block;
   }
 }
 @media only screen and (max-width: 550px) {
-  #left-box ul,
-  #right-box ul {
+  #mobile-left-right-box ul {
     width: 100%;
   }
-  #left-box ul li div,
-  #right-box ul li div {
+  #mobile-left-right-box ul li div {
     gap: 20px;
   }
-  #left-box ul li h5,
-  #right-box ul li h5 {
+  #mobile-left-right-box ul li h5 {
     font-size: 16px;
   }
-  #left-box ul li svg,
-  #right-box ul li svg {
+  #mobile-left-right-box ul li svg {
     width: 50px;
     height: 50px;
   }
-  #left-box ul li p,
-  #right-box ul li p {
+  #mobile-left-right-box ul li p {
     font-size: 12px;
   }
   #right-box {
