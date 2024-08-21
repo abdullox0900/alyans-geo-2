@@ -830,6 +830,9 @@
                 backgroundColor: "#F4F7FF",
                 ease: "none",
             }, "<")
+            .to(".header-res", {
+                backgroundColor: () => window.innerWidth < 1024 ? '#F4F7FF' : '#fff'
+            }, "<")
             .to(".header-logo", {
                 duration: 1,
                 y: () => window.innerWidth > 1024 ? "-30px" : 0,
@@ -861,23 +864,12 @@
                 { left: "-68%" },
                 { left: "50%", xPercent: -50, duration: 2, ease: "none", },
                 "<")
-            // .to("#element-2", {
-            //     top: "60%", // Pastga tushishi
-            //     duration: 1,
-            //     ease: "power2.out"
-            // })
-            .to(["#left-box", "#right-box"], {
-                bottom: "40%",
-                duration: 0.5,
-                ease: "power2.out",
-                // stagger: 0.2
-            })
             .to(".element-inner-top", {
                 x: '145%',
                 y: '-230%',
                 duration: 0.5,
                 ease: "power2.out",
-            }, "-=0.5")
+            }, "-=0.1")
             .to(".element-inner-body", {
                 x: '65%',
                 y: '5%',
@@ -896,6 +888,27 @@
                 duration: 0.5,
                 ease: "power2.out",
             }, "-=0.5")
+            .to("#element-2", {
+                y: () => window.innerWidth < 1024 ? '-100%' : '',
+            })
+            .to(["#left-box"], {
+                bottom: "50%",
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.2
+            }, "-=0.1")
+            .to(["#left-box"], {
+                bottom: "150%",
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.2
+            }, "-=0.1")
+            .to(["#right-box"], {
+                bottom: "40%",
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.2
+            }, "-=0.2")
             .to("#section-3", {
                 y: 0,
                 duration: 1,
@@ -906,6 +919,7 @@
                 backgroundColor: "#fff",
                 ease: "none",
             }, "<")
+
 
         // Slider elements animation
         gsap.utils.toArray(".slider-element").forEach((element, index) => {

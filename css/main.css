@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -130,6 +134,9 @@ header {
   }
 }
 @media only screen and (max-width: 1024px) {
+  header {
+    padding: 10px 15px;
+  }
   header .header-top-info {
     display: none;
   }
@@ -361,10 +368,42 @@ header {
 
 @media only screen and (max-width: 1024px) {
   #left-box {
-    display: none;
+    width: 100%;
+    left: 0;
+    bottom: -50%;
   }
   #right-box {
-    display: none;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #left-box ul,
+  #right-box ul {
+    width: 100%;
+  }
+  #left-box ul li div,
+  #right-box ul li div {
+    gap: 20px;
+  }
+  #left-box ul li h5,
+  #right-box ul li h5 {
+    font-size: 16px;
+  }
+  #left-box ul li svg,
+  #right-box ul li svg {
+    width: 50px;
+    height: 50px;
+  }
+  #left-box ul li p,
+  #right-box ul li p {
+    font-size: 12px;
+  }
+  #right-box {
+    width: 100%;
+    left: 0;
+    bottom: -100%;
   }
 }
 .slider-element {
