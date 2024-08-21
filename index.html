@@ -1069,16 +1069,14 @@
             })
             .to("#mobile-left-right-box", {
                 y: () => window.innerWidth < 1024 ? '-100%' : '',
-                duration: 10,
+                duration: 20,
                 ease: "none",
-                scrub: 10,
-                pin: true,
-            })
+            }, "+=0.5")
             .to("#section-3", {
                 y: 0,
                 duration: 10,
                 scrub: 10,
-            })
+            }, "+=0.5")
             .to(".header", {
                 duration: 1,
                 backgroundColor: "#fff",
