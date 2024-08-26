@@ -1201,21 +1201,23 @@
 
     <script>
 
-        let currentScroll = 0
-        let targetScroll = 0
-        let ease = 0.9
+        if (window.innerWidth > 1024) {
+            let currentScroll = 0
+            let targetScroll = 0
+            let ease = 0.9
 
-        window.addEventListener('scroll', () => {
-            targetScroll = window.pageYOffset
-        })
+            window.addEventListener('scroll', () => {
+                targetScroll = window.pageYOffset
+            })
 
-        function smoothScroll() {
-            currentScroll += (targetScroll - currentScroll) * ease
-            window.scrollTo(0, currentScroll)
-            requestAnimationFrame(smoothScroll)
+            function smoothScroll() {
+                currentScroll += (targetScroll - currentScroll) * ease
+                window.scrollTo(0, currentScroll)
+                requestAnimationFrame(smoothScroll)
+            }
+
+            smoothScroll()
         }
-
-        smoothScroll()
 
         gsap.registerPlugin(ScrollTrigger)
 
