@@ -88,6 +88,11 @@ section {
   z-index: 7;
 }
 
+@media only screen and (max-width: 1024px) {
+  #section3 {
+    height: 100%;
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -419,6 +424,12 @@ header {
   transform: scale(0.1) translate(1000px, -500px);
 }
 
+.slider-element:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  transform: scale(0.4);
+}
+
 .section-3-left-box {
   position: absolute;
   left: 30px;
@@ -427,9 +438,20 @@ header {
   line-height: 60px;
 }
 
+.section-3-box-mobile {
+  display: none;
+  transform: translateY(40%);
+}
+
 @media only screen and (max-width: 1024px) {
   .slider-element {
     display: none;
+  }
+  #section-3-title-box {
+    display: none;
+  }
+  .section-3-box-mobile {
+    display: inline-block;
   }
 }
 #section-4 {
@@ -446,6 +468,7 @@ header {
   overflow: hidden;
   padding: 30px;
   color: white;
+  transform: translateY(100px);
   background-color: rgba(255, 255, 255, 0.3);
   transition: height 1s ease;
 }
@@ -489,6 +512,7 @@ header {
 .section-4-center-wrap {
   position: relative;
   transform: scale(1.2);
+  transform: translateY(100px);
 }
 
 #center {
@@ -504,6 +528,11 @@ header {
   transform: translateY(15px);
 }
 
+@media only screen and (max-width: 1024px) {
+  .section-4-wrapper {
+    display: none;
+  }
+}
 #section-5-box {
   width: 100%;
   height: 85%;
@@ -517,6 +546,12 @@ header {
   bottom: 0%;
 }
 
+@media only screen and (max-width: 1024px) {
+  #section-5-box {
+    padding: 30px 25px !important;
+    height: 85%;
+  }
+}
 #section-6 {
   transform: translateY(100%);
   z-index: 6;
@@ -571,6 +606,29 @@ header {
   z-index: 10;
 }
 
+@media only screen and (max-width: 765px) {
+  #section-6 {
+    background-size: 380px;
+    background-position: center 60%;
+  }
+  #section-6-center {
+    width: 180px;
+    height: 350px;
+    margin-top: 50px;
+  }
+  .section-6-box {
+    width: 140px;
+    height: 200px;
+  }
+  #section-6-left-boxes {
+    gap: 35px;
+    left: -90%;
+  }
+  #section-6-right-boxes {
+    gap: 35px;
+    right: -60%;
+  }
+}
 #section-7 {
   background-image: url("../../assets/img/section-7-bg.jpg");
   background-repeat: no-repeat;

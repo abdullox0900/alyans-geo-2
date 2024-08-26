@@ -10,3 +10,10 @@
 	position: absolute;
 	bottom: 0%;
 }
+
+@media only screen and (max-width: 1024px) {
+	#section-5-box {
+		padding: 30px 25px !important;
+		height: 85%;
+	}
+}

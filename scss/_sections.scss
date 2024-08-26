@@ -43,3 +43,9 @@
 	transform: translateY(100%);
 	z-index: 7;
 }
+
+@media only screen and (max-width: 1024px) {
+	#section3 {
+		height: 100%;
+	}
+}

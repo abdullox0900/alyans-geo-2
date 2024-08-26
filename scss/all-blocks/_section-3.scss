@@ -12,6 +12,13 @@
 	transform: scale(0.1) translate(1000px, -500px);
 }
 
+.slider-element:nth-child(1) {
+	width: 300px;
+	height: 300px;
+	transform: scale(0.4);
+	// transform: translateX(-50%);
+}
+
 .section-3-left-box {
 	position: absolute;
 	left: 30px;
@@ -21,8 +28,21 @@
 	}
 }
 
+.section-3-box-mobile {
+	display: none;
+	transform: translateY(40%);
+}
+
 @media only screen and (max-width: 1024px) {
 	.slider-element {
 		display: none;
+	}
+
+	#section-3-title-box {
+		display: none;
+	}
+
+	.section-3-box-mobile {
+		display: inline-block;
 	}
 }

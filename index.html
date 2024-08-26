@@ -11,9 +11,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
+    <!-- Header Start -->
     <header>
         <div class="header-top flex justify-between mb-[15px]">
             <span class="text-[#2C3041] max-[1024px]:text-[12px]">Екатеринбург, улица Цвиллинга 4, офис 401</span>
@@ -72,7 +75,11 @@
             </button>
         </div>
     </header>
+    <!-- Header End -->
+
+    <!-- *Section-Container -->
     <div class="container-gsap">
+        <!-- Section-1-Start -->
         <section id="section-1">
             <div class="title title-content">единый поставщик услуг в сферах Инженерных изысканийи
                 <span
@@ -124,6 +131,9 @@
             </div>
 
         </section>
+        <!-- Section-1-End -->
+
+        <!-- Section-2-Start -->
         <section id="section-2">
             <div id="element-2" class="transform-element">
                 <img class="element-inner-top" src="./assets/img/element-2/img-1-top.svg" alt="">
@@ -473,8 +483,11 @@
                 </ul>
             </div>
         </section>
+        <!-- Section-2-End -->
+
+        <!-- Section-3-Start -->
         <section id="section-3">
-            <div class="section-3-left-box w-[500px] mb-[35px] max-[550px]:w-full">
+            <div id="section-3-title-box" class="section-3-left-box w-[500px] mb-[35px] max-[550px]:w-full">
                 <h4 class="text-[64px] mb-[50px] max-[550px]:text-[35px] max-[430px]:text-[22px] max-[430px]:mb-[20px]">
                     Мы возьмем все на себя
                 </h4>
@@ -508,7 +521,112 @@
             <div class="slider-element">
                 <img src="./assets/svg/card4.svg" alt="">
             </div>
+
+            <div class="section-3-box-mobile max-[765px]:px-[20px]">
+                <div class="section-3-content-mobile">
+                    <h4
+                        class="text-[34px] mb-[50px] max-[550px]:text-[35px] max-[430px]:text-[22px] max-[430px]:mb-[20px]">
+                        Мы возьмем все на себя
+                    </h4>
+                    <p
+                        class="flex items-start gap-[15px] text-[18px] w-[400px] mb-[30px] max-[550px]:text-[14px] max-[550px]:w-full max-[375px]:text-[12px]">
+                        <img src="./assets/icons/icon-1.svg" alt=""> Подробно
+                        консультируем по всем
+                        вопросам с
+                        бесплатным выездом
+                        на место
+                    </p>
+                    <p
+                        class="flex items-start gap-[15px] text-[18px] w-[400px] max-[550px]:text-[14px] max-[550px]:w-full max-[375px]:text-[12px]">
+                        <img src="./assets/icons/icon-1.svg" alt="">
+                        Подробно
+                        консультируем по всем
+                        вопросам с
+                        бесплатным выездом
+                        на место
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center gap-[35px] mt-[50px] w-full">
+                    <div
+                        class="flex flex-col w-[570px] min-h-[590px] p-[45px] bg-white rounded-[30px] border-[1px] border-[#BEBEBE] max-[765px]:w-full max-[765px]:min-h-[400px] max-[765px]:p-[20px]">
+                        <span class="text-[14px] text-[#2C3041] mb-[10px]">Первый этап</span>
+                        <h4
+                            class="w-[400px] text-[40px] text-[#2C3041] mb-[20px] max-[765px]:text-[26px] max-[765px]:w-full">
+                            Инженерные
+                            изыскания</h4>
+                        <div
+                            class="flex items-center gap-[15px] w-[330px] px-[10px] py-[7px] bg-[#11B917] rounded-[10px] mb-[10px] max-[765px]:text-[12px] max-[765px]:w-full">
+                            <img src="./assets/icons/galichka.svg" alt="icon" width="24" height="24">
+                            <span class=" text-[14px] text-white ppercase max-[765px]:text-[12px]">С гарантией
+                                согласование</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-[15px] w-[380px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px] mb-[100px] max-[765px]:mb-[60px] max-[765px]:w-full">
+                            <img src="./assets/icons/flag-icon.svg" alt="icon" width="24" height="24">
+                            <span class="text-[14px] text-white ppercase max-[765px]:text-[12px]">В соответствии с ГОСТ
+                                Р 51872 - 2019, СП
+                                446.1325800, СНиП 11-02-96</span>
+                        </div>
+                        <p class="text-[18px] text-[#2C3041] mb-[25px] max-[765px]:text-[12px]">Заключаем договор, в
+                            котором вы защищены от
+                            ошибок
+                        </p>
+                        <p class="text-[18px] text-[#2C3041] max-[765px]:text-[12px]">Сами отправляем готовые
+                            исследования</p>
+                    </div>
+                    <div
+                        class="flex flex-col w-[570px] min-h-[590px] p-[45px] bg-white rounded-[30px] border-[1px] border-[#BEBEBE] max-[765px]:w-full max-[765px]:min-h-[400px] max-[765px]:p-[20px]">
+                        <span class="text-[14px] text-[#2C3041] mb-[10px]">Второй этап</span>
+                        <h4
+                            class="w-[400px] text-[40px] text-[#2C3041] mb-[20px] max-[765px]:text-[26px] max-[765px]:w-full">
+                            Проектирование
+                            и прохождение экспертизы</h4>
+                        <div
+                            class="flex items-center gap-[15px] w-[380px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px] mb-[100px] max-[765px]:mb-[60px] max-[765px]:w-full">
+                            <img src="./assets/icons/flag-icon.svg" alt="icon" width="24" height="24">
+                            <span class="text-[14px] text-white ppercase max-[765px]:text-[12px]">Получаете документ со
+                                100% гарантией юридической значимости</span>
+                        </div>
+
+                        <p class="text-[18px] text-[#2C3041] max-[765px]:text-[12px]">Разработаем проект здания или
+                            сооружения любой степени сложности. Весь спектр услуг от эскиза до подготовки необходимой
+                            документации для прохождения экспертизы.</p>
+                    </div>
+                    <div
+                        class="flex flex-col w-[570px] min-h-[590px] p-[45px] bg-white rounded-[30px] border-[1px] border-[#BEBEBE] max-[765px]:w-full max-[765px]:min-h-[400px] max-[765px]:p-[20px]">
+                        <span class="text-[14px] text-[#2C3041] mb-[10px]">Третий этап</span>
+                        <h4
+                            class="w-[400px] text-[40px] text-[#2C3041] mb-[20px] max-[765px]:text-[26px] max-[765px]:w-full">
+                            Порекомендуем
+                            или осуществим
+                            тех.надзор</h4>
+                        <div
+                            class="flex items-center gap-[15px] w-[330px] px-[10px] py-[7px] bg-[#11B917] rounded-[10px] mb-[10px] max-[765px]:text-[12px] max-[765px]:w-full">
+                            <img src="./assets/icons/galichka.svg" alt="icon" width="24" height="24">
+                            <span class=" text-[14px] text-white ppercase max-[765px]:text-[12px]">С гарантией</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col w-[570px] min-h-[590px] p-[45px] bg-white rounded-[30px] border-[1px] border-[#BEBEBE] max-[765px]:w-full max-[765px]:min-h-[400px] max-[765px]:p-[20px]">
+                        <span class="text-[14px] text-[#2C3041] mb-[10px]">Четвертый этап</span>
+                        <h4
+                            class="w-[400px] text-[40px] text-[#2C3041] mb-[20px] max-[765px]:text-[26px] max-[765px]:w-full">
+                            Кадастровый учет и ввод
+                            в эксплуатацию </h4>
+                        <div
+                            class="flex items-center gap-[15px] w-[330px] px-[10px] py-[7px] bg-[#11B917] rounded-[10px] mb-[10px] max-[765px]:text-[12px] max-[765px]:w-full">
+                            <img src="./assets/icons/galichka.svg" alt="icon" width="24" height="24">
+                            <span class=" text-[14px] text-white ppercase max-[765px]:text-[12px]">С гарантией</span>
+                        </div>
+                        <p class="text-[18px] text-[#2C3041] max-[765px]:text-[12px]">Делаем все под ключ</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Section-3-End -->
+
+        <!-- Section-4-Start -->
         <section id="section-4">
             <div class="section-4-wrapper">
                 <div id="left-top" class="section-4-element">
@@ -543,18 +661,26 @@
                 </div>
             </div>
         </section>
+        <!-- Section-4-End -->
+
+        <!-- Section-5-Start -->
         <section id="section-5">
             <div id="section-5-box">
-                <div class="section-5-content flex items-start justify-between">
-                    <div class="w-[260px]">
+                <div class="section-5-content flex items-start justify-between max-[1024px]:flex-col">
+                    <div class="w-[260px] max-[1024px]:mb-[30px]">
                         <span class="text-[14px] text-[#CFCFCF]">Директор Альянс-ГЕО</span>
                         <h5 class="text-[18px] text-white">Владимир Евгеньевич Покрышкин</h5>
                     </div>
                     <div>
-                        <h4 class="text-[48px] w-[700px] text-white mb-[55px]">Обращение к будущим партнерами</h4>
-                        <div class="flex gap-[30px]">
-                            <div class="w-[420px] text-[#D7D7D7] text-[18px]">
-                                <p class="mb-[36px]">“Альянс - ГЕО” специализируется на комплексных инженерных
+                        <h4
+                            class="text-[48px] w-[700px] text-white mb-[55px] max-[1024px]:text-[24px] max-[1024px]:mb-[35px] max-[1024px]:w-full">
+                            Обращение к будущим партнерами</h4>
+                        <div class="flex gap-[30px] max-[1024px]:flex-col max-[765px]:gap-[5px]">
+                            <div
+                                class="w-[420px] text-[#D7D7D7] text-[18px] max-[765px]:text-[12px] max-[765px]:w-full">
+                                <p class="mb-[36px] max-[765px]:mb-[10px]">“Альянс - ГЕО” специализируется на
+                                    комплексных
+                                    инженерных
                                     изысканиях.
                                     Силами нашей
                                     команды <span class="text-white">реализованно более 300 проектов</span>, в том числе
@@ -565,7 +691,8 @@
                                     которая будет <span class="text-white">максимально соответствовать вашим ожиданиям и
                                         потребностям</span></p>
                             </div>
-                            <div class="flex flex-col gap-[37px] w-[570px] text-[#D7D7D7] text-[18px]">
+                            <div
+                                class="flex flex-col gap-[37px] w-[570px] text-[#D7D7D7] text-[18px] max-[765px]:gap-[10px] max-[765px]:text-[12px] max-[765px]:w-full">
                                 <p>
                                     Обсудим все детали вашего будущего проекта, <span
                                         class="text-white">проанализируем</span> и <span class="text-white">выявим
@@ -596,38 +723,54 @@
                 </div>
             </div>
         </section>
+        <!-- Section-5-End -->
+
+        <!-- Section-6-Start -->
         <section id="section-6">
             <div id="section-6-center">
-                <img src="./assets/img/section-5-center-img.png" alt="">
+                <img class="max-[765px]:w-[185px] max-[765px]:h-[350px]" src="./assets/img/section-5-center-img.png"
+                    alt="">
             </div>
             <div id="section-6-left-boxes">
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-4.jpg" alt="">
+                    <img class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-4.jpg"
+                        src="./assets/sertificate/sertificat-4.jpg" alt="">
                 </div>
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-3.jpg" alt="">
+                    <img class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-3.jpg"
+                        src="./assets/sertificate/sertificat-3.jpg" alt="">
                 </div>
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-2.jpg" alt="">
+                    <a class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-2.jpg">
+                        <img src="./assets/sertificate/sertificat-2.jpg" alt="">
+                    </a>
                 </div>
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-1.jpg" alt="">
+                    <a class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-1.jpg">
+                        <img src="./assets/sertificate/sertificat-1.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div id="section-6-right-boxes">
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-7.jpg" alt="">
+                    <a class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-7.jpg">
+                        <img src="./assets/sertificate/sertificat-7.jpg" alt="">
+                    </a>
                 </div>
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-6.jpg" alt="">
+                    <a class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-7.jpg">
+                        <img src="./assets/sertificate/sertificat-6.jpg" alt="">
+                    </a>
                 </div>
                 <div class="section-6-box">
-                    <img src="./assets/sertificate/sertificat-5.jpg" alt="">
+                    <a class="cursor-pointer" data-fancybox="gallery" data-src="./assets/sertificate/sertificat-5.jpg">
+                        <img src="./assets/sertificate/sertificat-5.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div id="section-6-div-1" class="full-div py-[20px]">
                 <h4 class="mb-[30px] pl-[20px]">Реализованные проекты</h4>
-                <div class="flex gap-[27px] w-full">
+                <div class="w-full">
                     <ul class="flex items-center w-full gap-[31px] overflow-x-scroll">
                         <li class="w-[570px] h-[756px] bg-white rounded-[30px] ml-[20px]">
                             <div class="flex items-center gap-[15px] pt-[44px] px-[30px] mb-[30px] overflow-x-scroll">
@@ -814,12 +957,93 @@
             </div>
             <div id="section-6-div-2" class="full-div p-[20px]">
                 <div class="flex gap-[27px]">
+                    <ul class="flex items-center w-full gap-[31px] overflow-x-scroll">
+                        <li class="relative w-[570px] h-full bg-white rounded-[30px] ml-[20px]">
+                            <div
+                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px]">
+                                <img src="./assets/icons/flag-icon.svg" alt="icon" width="24" height="24">
+                                <span class=" text-[14px] text-white ppercase">Утверждено</span>
+                            </div>
+                            <h4 class=" text-[36px] text-[#2C3041] w-[400px] mb-[25px] ml-[50px] mt-[90px]">СРО и
+                                проверки на
+                                оборудование
+                            </h4>
+                            <p class="mb-[100px] text-[18px] text-[#71768D] pl-[50px]">Сертификация Альянс - гео</p>
+                            <div
+                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll">
+                                <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-1.png"
+                                    src="./assets/sertificate/section-6-1.png" alt="">
+
+                                <img class="cursor-pointer  object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-2.png"
+                                    src="./assets/sertificate/section-6-2.png" alt="">
+                                <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-3.png"
+                                    src="./assets/sertificate/section-6-1.png" alt="">
+                            </div>
+                            <img class="pl-[30px] mb-[40px]" src="./assets/svg/scroll1.svg" alt="">
+                        </li>
+                        <li class="relative w-[570px] h-full bg-[#2C3041] rounded-[30px] ml-[20px]">
+                            <div
+                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#308DDD] rounded-[10px]">
+                                <img src="./assets/icons/check.svg" alt="icon" width="24" height="24">
+                                <span class=" text-[14px] text-white ppercase">Занесено</span>
+                            </div>
+                            <h4 class=" text-[36px] text-[#fff] w-[370px] mb-[25px] ml-[50px] mt-[90px]">Письма от
+                                инстанций
+                            </h4>
+                            <p class="mb-[100px] text-[18px] text-[#71768D] pl-[50px]">Сертификация Альянс - гео</p>
+                            <div
+                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll">
+                                <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-4.png"
+                                    src="./assets/sertificate/section-6-4.png" alt="">
+
+                                <img class="cursor-pointer  object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-5.png"
+                                    src="./assets/sertificate/section-6-5.png" alt="">
+                                <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-6.png"
+                                    src="./assets/sertificate/section-6-6.png" alt="">
+                            </div>
+                            <img class="pl-[30px] mb-[40px]" src="./assets/svg/scroll1.svg" alt="">
+                        </li>
+                        <li class="relative w-[570px] h-full bg-[#C4C6DB] rounded-[30px] ml-[20px]">
+                            <div
+                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px]">
+                                <img src="./assets/icons/galichka.svg" alt="icon" width="24" height="24">
+                                <span class=" text-[14px] text-white ppercase">Проверено</span>
+                            </div>
+                            <h4 class=" text-[36px] text-[#2C3041] w-[360px] mb-[25px] ml-[50px] mt-[90px]">Примеры
+                                отчетов
+                            </h4>
+                            <p class="mb-[100px] text-[18px] text-[#71768D] pl-[50px]">Сертификация Альянс - гео</p>
+                            <div
+                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll">
+                                <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-7.png"
+                                    src="./assets/sertificate/section-6-7.png" alt="">
+
+                                <img class="cursor-pointer  object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-8.png"
+                                    src="./assets/sertificate/section-6-8.png" alt="">
+                                <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
+                                    data-src="./assets/sertificate/section-6-9.png"
+                                    src="./assets/sertificate/section-6-9.png" alt="">
+                            </div>
+                            <img class="pl-[30px] mb-[40px]" src="./assets/svg/scroll1.svg" alt="">
+                        </li>
+                    </ul>
+                    <!-- <img src="./assets/svg/section-7-box-2.svg" alt="">
                     <img src="./assets/svg/section-7-box-2.svg" alt="">
-                    <img src="./assets/svg/section-7-box-2.svg" alt="">
-                    <img src="./assets/svg/section-7-box-2.svg" alt="">
+                    <img src="./assets/svg/section-7-box-2.svg" alt=""> -->
                 </div>
             </div>
         </section>
+        <!-- Section-6-End -->
+
+        <!-- Section-7-Start -->
         <section id="section-7">
             <div id="section-7-top-element">
                 <img src="./assets/img/section-7-burilka.png" alt="">
@@ -892,6 +1116,9 @@
             <img class="section-7-bg-center" src="./assets/img/section-7-bg-center.png" alt="">
             <img class="section-7-bg-right" src="./assets/img/section-7-bg-right.png" alt="">
         </section>
+        <!-- Section-7-End -->
+
+        <!-- Section-7-Start -->
         <section id="section-8">
             <div class="flex flex-col w-full px-[25px] py-[50px] ">
                 <div class="flex items-start justify-between gap-[30px] flex-wrap mb-[50px]">
@@ -968,9 +1195,28 @@
                 <img src="./assets/svg/footer-bottom-text.svg" alt="">
             </div>
         </section>
+        <!-- Section-7-End -->
+
     </div>
 
     <script>
+
+        let currentScroll = 0
+        let targetScroll = 0
+        let ease = 0.9
+
+        window.addEventListener('scroll', () => {
+            targetScroll = window.pageYOffset
+        })
+
+        function smoothScroll() {
+            currentScroll += (targetScroll - currentScroll) * ease
+            window.scrollTo(0, currentScroll)
+            requestAnimationFrame(smoothScroll)
+        }
+
+        smoothScroll()
+
         gsap.registerPlugin(ScrollTrigger)
 
         let tl = gsap.timeline({
@@ -989,20 +1235,20 @@
 
         tl.to("#section-2", {
             x: 0,
-            duration: 1,
+            duration: 15,
             ease: "none"
         })
             .to(".header", {
-                duration: 1,
+                duration: 15,
                 y: () => window.innerWidth > 1024 ? "-30px" : 0,
                 backgroundColor: "#F4F7FF",
                 ease: "none",
             }, "<")
             .to(".header-res", {
-                backgroundColor: () => window.innerWidth < 1024 ? '#F4F7FF' : '#fff'
+                backgroundColor: () => window.innerWidth < 1024 ? '#F4F7FF' : ''
             }, "<")
             .to(".header-logo", {
-                duration: 1,
+                duration: 10,
                 y: () => window.innerWidth > 1024 ? "-30px" : 0,
                 ease: "none",
             }, "<")
@@ -1015,53 +1261,56 @@
                 x: '-100vh', // Ekran kengligi bo'yicha chapga siljitish
                 y: '50%',
                 ease: "none", // Tekis harakat
+                duration: 5,
             }, "<")
             .to('.subtitle', {
                 x: '-100vh', // Ekran kengligi bo'yicha chapga siljitish
                 ease: "none", // Tekis harakat
+                duration: 5,
             }, "<")
             .to('.section-right-box', {
                 y: '-100vh', // Ekran kengligi bo'yicha chapga siljitish
                 ease: "none", // Tekis harakat
+                duration: 5,
             }, "<")
             .to("#element-1", {
                 x: "-20%",
-                duration: 1,
+                duration: 15,
             }, "<")
             .fromTo("#element-2",
                 { left: "-68%" },
                 {
-                    left: "50%", xPercent: -50, duration: 1, ease: "none",
+                    left: "50%", xPercent: -50, duration: 15, ease: "none",
                 }, "<")
             .to(["#left-box", "#right-box"], {
                 bottom: "40%",
-                duration: 0.5,
-                ease: "power2.out",
+                duration: 15,
+                ease: "power3.out",
             })
             .to(".element-inner-top", {
                 x: '145%',
                 y: '-230%',
-                duration: 0.5,
+                duration: 7,
                 ease: "power2.out",
-            }, "-=0.5")
+            }, "-=14")
             .to(".element-inner-body", {
                 x: '65%',
                 y: '5%',
-                duration: 0.5,
+                duration: 7,
                 ease: "power2.out",
-            }, "-=0.5")
+            }, "-=14")
             .to(".element-inner-oval", {
                 x: '-370%',
                 y: '-120%',
-                duration: 0.5,
+                duration: 7,
                 ease: "power2.out",
-            }, "-=0.5")
+            }, "-=14")
             .to(".element-inner-bottom", {
                 x: '-140%',
                 y: '140%',
-                duration: 0.5,
+                duration: 7,
                 ease: "power2.out",
-            }, "-=0.5")
+            }, "-=14")
             .to("#element-2", {
                 y: () => window.innerWidth < 1024 ? '-110%' : '',
                 duration: 2,
@@ -1069,132 +1318,149 @@
             })
             .to("#mobile-left-right-box", {
                 y: () => window.innerWidth < 1024 ? '-100%' : '',
-                duration: 20,
+                duration: () => window.innerWidth < 1024 ? 20 : '',
                 ease: "none",
             }, "+=0.5")
             .to("#section-3", {
                 y: 0,
-                duration: 10,
-                scrub: 10,
+                duration: 15,
+                scrub: () => window.innerWidth > 1024 ? 10 : '0',
             }, "+=0.5")
             .to(".header", {
-                duration: 1,
+                duration: 15,
                 backgroundColor: "#fff",
                 ease: "none",
             }, "<")
             .to(".header-res", {
-                backgroundColor: () => window.innerWidth < 1024 ? '#fff' : '#fff'
+                backgroundColor: () => window.innerWidth < 1024 ? '#fff' : ''
             }, "<")
+            .to(".section-3-box-mobile", {
+                y: () => window.innerWidth < 1024 ? '-60%' : '',
+                duration: () => window.innerWidth < 1024 ? '100' : '',
+            }, "+=5")
 
         // Slider elements animation
-        gsap.utils.toArray(".slider-element").forEach((element, index) => {
-            tl.fromTo(element,
-                {
-                    scale: 0.1,
-                    x: '100vw',
-                    y: '-50vh',
-                },
-                {
-                    scale: 1,
-                    x: 0,
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.5,
-                    ease: "power2.out"
-                },
-                `>-0.3`
-            )
-                .to(element, {
-                    x: '-100vw',
-                    y: '100vh',
-                    scale: 0.1,
-                    opacity: 0,
-                    duration: 0.5,
-                    ease: "power2.in"
-                }, `>0.2`)
-        })
+        if (window.innerWidth > 1024) {
+            gsap.utils.toArray(".slider-element").forEach((element, index) => {
+                const initialPositions = [
+                    { x: '0vw', y: '0vh', scale: 1 },
+                    { x: '30vw', y: '20vh', scale: 0.6 },
+                    { x: '40vw', y: '-20vh', scale: 0.4 },
+                    { x: '45vw', y: '10vh', scale: 0.3 }
+                ]
+
+                const initialPos = initialPositions[index % 4]
+
+                tl.fromTo(element,
+                    {
+                        scale: initialPos.scale,
+                        x: initialPos.x,
+                        y: initialPos.y,
+                        duration: 15,
+                        filter: 'blur(10px)'
+                    },
+                    {
+                        scale: 1,
+                        x: 0,
+                        y: 0,
+                        opacity: 1,
+                        duration: 15,
+                        filter: 'blur(0px)',
+                        ease: "power2.out"
+                    },
+                    `+=1`
+                )
+                    .to(element, {
+                        x: '-100vw',
+                        y: '100vh',
+                        scale: 0.1,
+                        opacity: 0,
+                        duration: 15,
+                        ease: "power2.in"
+                    }, `>0.2`)
+            })
+        }
 
         // Section-4 animation
         tl.to("#section-4", {
             y: 0,
-            duration: 10,
+            duration: 20,
             ease: "none",
             onStart: () => gsap.to(".header", { backgroundColor: "#F4F7FF", duration: 0.5 })
         })
             .to(".section-4-element", {
-                y: 100, // Barcha elementlarni 100px pastga siljitamiz
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
-            }, "-=1")
+            }, "+=1")
             .to("#left-top", {
                 height: 190,
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
             .to("#left-bottom", {
                 height: 520,
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
             .to("#right-top", {
                 height: 580,
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
             .to("#right-bottom", {
                 height: 130,
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
             .to(".section-4-img-top", {
                 rotate: -5,
                 scale: 0.4,
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
             .to(".section-4-img-body", {
                 rotate: 10,
                 scale: 0.9,
-                duration: 1,
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
             .to(".section-4-img-bottom", {
                 rotate: -10,
-                y: '10%',
-                duration: 1,
+                y: '15%',
+                duration: 15,
                 ease: "power2.inOut"
             }, "#section-4")
 
         // Section-5 and Section-6 animations
         tl.to("#section-5", {
             y: 0,
-            duration: 2,
+            duration: 20,
             ease: "none"
-        })
+        }, "+=8")
             .to("#section-5-element", {
                 y: "-90%",
                 duration: 1
             }, "-=1")
             .to(".header", {
-                duration: 0.5,
+                duration: 10,
                 backgroundColor: "#fff",
             }, "+=0.5")
             .to("#section-5", {
                 backgroundColor: "#F4F7FF",
-                duration: 0.5
+                duration: 10
             }, "+=0.5")
             .to(".section-5-content", {
                 opacity: 0,
-                duration: 0.5
-            }, "+=1")
-            .to("#section-6", {
-                y: 0,
-                duration: 1
-            })
-            .to("#section-6-left-boxes", {
-                x: 220,
-                duration: 0.5
-            })
+                duration: 10
+            }, "+=2")
+        // .to("#section-6", {
+        //     y: 0,
+        //     duration: 10
+        // }, "+=1")
+        // .to("#section-6-left-boxes", {
+        //     x: 220,
+        //     duration: 0.5
+        // })
         // .to("#section-6-center", {
         //     rotation: 1,
         //     duration: 1
@@ -1210,7 +1476,7 @@
 
         tl.to("#section-6", {
             y: 0,
-            duration: 1
+            duration: 20
         })
             .to(".header", {
                 duration: 0.5,
@@ -1218,77 +1484,83 @@
             }, "+=0.5")
             .to("#section-6-center", {
                 rotation: 0,
-                duration: 1
-            }, "+=0.5")
+                duration: 15
+            }, "start")
             .to("#section-6-left-boxes", {
-                x: 220,
-                duration: 0.5
-            })
+                x: 350,
+                duration: 15
+            }, "start")
             .to("#section-6-right-boxes", {
                 x: -220,
-                duration: 0.5
-            }, "<")
-            .add("section6Complete")
+                duration: 15
+            }, "start")
+            // .add("section6Complete")
             .to("#section-6-div-1", {
-                y: -890,
-                duration: 1
-            }, "section6Complete+=1")
+                y: '-100%',
+                duration: 20
+            }, "+=8")
             .to("#section-6-div-2", {
-                y: -890,
-                duration: 1
-            }, "section6Complete+=2")
-        // .to("#section-7", {
-        //     y: 0,
-        //     duration: 1
-        // }, "section6Complete+=3")
+                y: '-100%',
+                duration: 30
+            }, "+=10")
+            .to("#section-7", {
+                y: 0,
+                duration: 25,
+                ease: "slow(0.7, 0.7, false)"
+            }, "+=10")
 
         tl.to("#section-7", {
             y: 0,
-            duration: 1
-        }, "section6Complete+=3")
+            duration: 5,
+            ease: "slow(0.7, 0.7, false)"
+        })
             .add("section7Start")
             .to("#section-7-top-element", {
-                y: "95%", // 90% pastga tushadi
-                duration: 2
-            }, "section7Start")
+                y: "100%",
+                duration: 35,
+                ease: "power2.inOut"
+            }, "+=1")
             .to(".section-7-bg-left", {
                 x: -50,
                 rotate: 3,
-                duration: 1
-            }, "section7Start+=2")
+                duration: 20,
+                ease: "power2.inOut"
+            }, "-=1")
             .to(".section-7-bg-right", {
                 x: 50,
                 rotate: -3,
-                duration: 1
-            }, "section7Start+=2")
+                duration: 20,
+                ease: "power2.inOut"
+            }, "<")
             .to("#section-7-top-element", {
-                y: "-100%", // Yuqoriga chiqib ketadi
-                duration: 1
-            }, "section7Start+=4")
+                y: "-100%",
+                duration: 60,
+                ease: "none"
+            }, "+=1")
             .to('.section-7-bottom-element-wrapper', {
                 y: "-100%",
-                duration: 2
-            }, "section7Start+=4")
+                duration: 80,
+                ease: "none"
+            }, "<")
             .to(".footer-top", {
-                y: "-140%",
-                duration: 1
-            }, "section7Start+=5")
+                y: "-130%",
+                duration: 35,
+                ease: "power2.inOut"
+            }, "+=4")
             .to("#section-7", {
                 y: "-60%",
-                duration: 2
-            }, "section7Start+=7")
+                duration: 35,
+                ease: "power2.inOut"
+            }, "+=5")
             .to("#section-8", {
-                y: "40%", // Section 8 ni to'liq ko'rsatish
-                duration: 2
-            }, "section7Start+=7")
-        // .to("#footer", {
-        //     y: "0%",
-        //     duration: 1
-        // }, "section7Start+=7")
+                y: "40%",
+                duration: 35,
+                ease: "power2.inOut"
+            }, "<")
 
-
-
-
+        Fancybox.bind("[data-fancybox]", {
+            // Your options here
+        });
     </script>
     <script src="./js/common/section.js"></script>
     <script src="./js/media.js"></script>

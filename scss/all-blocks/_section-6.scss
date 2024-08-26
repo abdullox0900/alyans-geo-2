@@ -51,3 +51,31 @@
 	left: 0;
 	z-index: 10;
 }
+
+@media only screen and (max-width: 765px) {
+	#section-6 {
+		background-size: 380px;
+		background-position: center 60%;
+	}
+
+	#section-6-center {
+		width: 180px;
+		height: 350px;
+		margin-top: 50px;
+	}
+
+	.section-6-box {
+		width: 140px;
+		height: 200px;
+	}
+
+	#section-6-left-boxes {
+		gap: 35px;
+		left: -90%;
+	}
+
+	#section-6-right-boxes {
+		gap: 35px;
+		right: -60%;
+	}
+}
