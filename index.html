@@ -10,7 +10,6 @@
     <title>GSAP Scroll Animation - Version 26 with Section 3 Slider</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollSmoother.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
@@ -661,6 +660,13 @@
                     </div>
                 </div>
             </div>
+            <div class="section-4-wrapper-mobile">
+                <div class="scroll-element-4">Element 1</div>
+                <div class="scroll-element-4">Element 2</div>
+                <div class="scroll-element-4">Element 3</div>
+                <div class="scroll-element-4">Element 4</div>
+            </div>
+
         </section>
         <!-- Section-4-End -->
 
@@ -729,8 +735,49 @@
         <!-- Section-6-Start -->
         <section id="section-6">
             <div id="section-6-center">
-                <img class="max-[765px]:w-[185px] max-[765px]:h-[350px]" src="./assets/img/section-5-center-img.png"
-                    alt="">
+                <div class="relative">
+                    <img class="max-[765px]:w-[185px] max-[765px]:h-[350px]" src="./assets/img/section-5-center-img.png"
+                        alt="">
+                    <div class="flex items-center gap-[2px] absolute top-[21%] left-[28%]">
+                        <img class="section-6-vector-1 opacity-0 max-[765px]:w-[11px] max-[765px]:h-[11px]"
+                            src="./assets/icons/vector-1.svg" alt="">
+                        <img class="section-6-vector-2 opacity-0 max-[765px]:w-[11px] max-[765px]:h-[11px]"
+                            style="transform: translateX(-10px);" src="./assets/icons/vector-2.svg" alt="">
+                        <img class="section-6-vector-3 opacity-0 max-[765px]:w-[11px] max-[765px]:h-[11px]"
+                            style="transform: translateX(-30px);" src="./assets/icons/vector-3.svg" alt="">
+                        <img class="section-6-vector-4 opacity-0 max-[765px]:w-[11px] max-[765px]:h-[11px]"
+                            style="transform: translateX(-70px);" src="./assets/icons/vector-4.svg" alt="">
+                        <img class="section-6-vector-5 opacity-0 max-[765px]:w-[11px] max-[765px]:h-[11px]"
+                            style="transform: translateX(-80px);" src="./assets/icons/vector-5.svg" alt="">
+                        <img class="section-6-vector-6 opacity-0 max-[765px]:w-[11px] max-[765px]:h-[11px]"
+                            style="transform: translateX(-90px);" src="./assets/icons/vector-6.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Section-6-Left-Box -->
+            <div class="absolute right-[5%] top-[20%] max-[1024px]:hidden">
+                <div class="flex gap-[15px] items-center mb-[24px] max-[765px]:mb-[15px]">
+                    <img src="./assets/icons/icon-2.svg" alt="">
+                    <span class="text-[18px] max-[765px]:text-[14px]">Строительные холдинги</span>
+                </div>
+                <div class="flex gap-[15px] items-center">
+                    <img src="./assets/icons/icon-2.svg" alt="">
+                    <span class="text-[18px] max-[765px]:text-[14px]">Ресурсоснабжающие компании</span>
+                </div>
+            </div>
+
+            <!-- Section-6-Right-Box -->
+            <div class="absolute left-[5%] bottom-[15%] w-[444px] max-[1024px]:hidden">
+                <h4 class="text-[48px] w-[490px] text-[#2C3041] mb-[50px]">Стратегические партнерство</h4>
+                <div class="flex gap-[15px] items-center mb-[24px] max-[765px]:mb-[15px]">
+                    <img src="./assets/icons/icon-2.svg" alt="">
+                    <span class="text-[18px] max-[765px]:text-[14px]">Проектные институты</span>
+                </div>
+                <div class="flex gap-[15px] items-center">
+                    <img src="./assets/icons/icon-2.svg" alt="">
+                    <span class="text-[18px] max-[765px]:text-[14px]">Ресурсодобывающие, промышленные и производственные
+                        предприятия</span>
+                </div>
             </div>
             <div id="section-6-left-boxes">
                 <div class="section-6-box">
@@ -986,21 +1033,25 @@
             </div>
             <div id="section-6-div-2" class="full-div p-[20px]">
                 <div class="flex gap-[27px] max-[1024px]:pt-[70px]">
-                    <ul
-                        class="section-6-div-list flex items-center w-full gap-[31px] overflow-x-scroll max-[1024px]:flex-col">
-                        <li class="relative w-[570px] h-full bg-white rounded-[30px] ml-[20px]">
+                    <ul class="section-6-div-list flex items-center w-full gap-[31px] max-[1024px]:flex-col">
+                        <li class="relative w-[570px] h-full bg-white rounded-[30px] max-[765px]:w-full">
                             <div
-                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px]">
+                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px] max-[765px]:p-[5px]">
                                 <img src="./assets/icons/flag-icon.svg" alt="icon" width="24" height="24">
-                                <span class=" text-[14px] text-white ppercase">Утверждено</span>
+                                <span class=" text-[14px] text-white ppercase max-[765px]:text-[10px]">Утверждено</span>
                             </div>
-                            <h4 class=" text-[36px] text-[#2C3041] w-[400px] mb-[25px] ml-[50px] mt-[90px]">СРО и
+                            <h4
+                                class=" text-[36px] text-[#2C3041] w-[400px] mb-[25px] ml-[50px] mt-[90px] max-[765px]:w-full max-[765px]:text-[24px] max-[765px]:ml-[20px] max-[765px]:mt-[70px]">
+                                СРО
+                                и
                                 проверки на
                                 оборудование
                             </h4>
-                            <p class="mb-[100px] text-[18px] text-[#71768D] pl-[50px]">Сертификация Альянс - гео</p>
+                            <p
+                                class="mb-[100px] text-[18px] text-[#71768D] pl-[50px] max-[765px]:pl-[20px] max-[765px]:text-[14px] max-[765px]:mb-[35px]">
+                                Сертификация Альянс - гео</p>
                             <div
-                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll">
+                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] max-[765px]:h-[235px] max-[765px]:mb-[25px] max-[765px]:pt-[0px] max-[765px]:py-[20px] overflow-x-scroll">
                                 <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
                                     data-src="./assets/sertificate/section-6-1.png"
                                     src="./assets/sertificate/section-6-1.png" alt="">
@@ -1012,20 +1063,24 @@
                                     data-src="./assets/sertificate/section-6-3.png"
                                     src="./assets/sertificate/section-6-1.png" alt="">
                             </div>
-                            <img class="pl-[30px] mb-[40px]" src="./assets/svg/scroll1.svg" alt="">
+                            <img class="pl-[30px] mb-[40px] max-[765px]:h-[35px]" src="./assets/svg/scroll1.svg" alt="">
                         </li>
-                        <li class="relative w-[570px] h-full bg-[#2C3041] rounded-[30px] ml-[20px]">
+                        <li class="relative w-[570px] h-full bg-[#2C3041] rounded-[30px] ml-[20px] max-[765px]:w-full">
                             <div
-                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#308DDD] rounded-[10px]">
+                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#308DDD] rounded-[10px] max-[765px]:p-[5px]">
                                 <img src="./assets/icons/check.svg" alt="icon" width="24" height="24">
                                 <span class=" text-[14px] text-white ppercase">Занесено</span>
                             </div>
-                            <h4 class=" text-[36px] text-[#fff] w-[370px] mb-[25px] ml-[50px] mt-[90px]">Письма от
+                            <h4
+                                class=" text-[36px] text-[#fff] w-[370px] mb-[25px] ml-[50px] mt-[90px] max-[765px]:w-full max-[765px]:text-[24px] max-[765px]:ml-[20px] max-[765px]:mt-[70px]">
+                                Письма от
                                 инстанций
                             </h4>
-                            <p class="mb-[100px] text-[18px] text-[#71768D] pl-[50px]">Сертификация Альянс - гео</p>
+                            <p
+                                class="mb-[100px] text-[18px] text-[#71768D] pl-[50px] max-[765px]:text-[14px] max-[765px]:mb-[35px]">
+                                Сертификация Альянс - гео</p>
                             <div
-                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll">
+                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll max-[765px]:h-[235px] max-[765px]:mb-[25px] max-[765px]:pt-[0px] max-[765px]:py-[20px]">
                                 <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
                                     data-src="./assets/sertificate/section-6-4.png"
                                     src="./assets/sertificate/section-6-4.png" alt="">
@@ -1039,18 +1094,22 @@
                             </div>
                             <img class="pl-[30px] mb-[40px]" src="./assets/svg/scroll1.svg" alt="">
                         </li>
-                        <li class="relative w-[570px] h-full bg-[#C4C6DB] rounded-[30px] ml-[20px]">
+                        <li class="relative w-[570px] h-full bg-[#C4C6DB] rounded-[30px] ml-[20px] max-[765px]:w-full">
                             <div
-                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px]">
+                                class="flex items-center gap-[15px] absolute top-[25px] right-[25px] px-[10px] py-[7px] bg-[#FD4400] rounded-[10px] max-[765px]:p-[5px]">
                                 <img src="./assets/icons/galichka.svg" alt="icon" width="24" height="24">
                                 <span class=" text-[14px] text-white ppercase">Проверено</span>
                             </div>
-                            <h4 class=" text-[36px] text-[#2C3041] w-[360px] mb-[25px] ml-[50px] mt-[90px]">Примеры
+                            <h4
+                                class=" text-[36px] text-[#2C3041] w-[360px] mb-[25px] ml-[50px] mt-[90px] max-[765px]:w-full max-[765px]:text-[24px] max-[765px]:ml-[20px] max-[765px]:mt-[70px]">
+                                Примеры
                                 отчетов
                             </h4>
-                            <p class="mb-[100px] text-[18px] text-[#71768D] pl-[50px]">Сертификация Альянс - гео</p>
+                            <p
+                                class="mb-[100px] text-[18px] text-[#71768D] pl-[50px] max-[765px]:text-[14px] max-[765px]:mb-[35px]">
+                                Сертификация Альянс - гео</p>
                             <div
-                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll">
+                                class="flex items-center gap-[15px] h-[285px] pt-[44px] px-[50px] mb-[100px] overflow-x-scroll max-[765px]:h-[235px] max-[765px]:mb-[25px] max-[765px]:pt-[0px] max-[765px]:py-[20px]">
                                 <img class="cursor-pointer object-cover w-[202px] h-full" data-fancybox="gallery-1"
                                     data-src="./assets/sertificate/section-6-7.png"
                                     src="./assets/sertificate/section-6-7.png" alt="">
@@ -1118,9 +1177,13 @@
                 </div>
             </div>
             <div class="footer-top bg-[#2C3041]">
-                <div class="max-w-md w-full p-6">
-                    <h1 class="font-bold text-[70px] text-white leading-[60px] mb-[35px]">Свяжитесь с нами</h1>
-                    <p class="text-gray-400 mb-6 text-[18px] font-light mb-[50px]">Мы на связи 7 дней в неделю</p>
+                <div class="w-full">
+                    <h1
+                        class="font-bold text-[70px] text-white leading-[60px] mb-[35px] max-[765px]:text-[35px] max-[1024px]:text-[45px] leading-none">
+                        Свяжитесь с нами</h1>
+                    <p
+                        class="text-gray-400 mb-6 text-[18px] font-light mb-[50px] max-[765px]:text-[14px] max-[765px]:mb-[35px]">
+                        Мы на связи 7 дней в неделю</p>
 
                     <form class="space-y-4">
                         <div class="footer-top-wrapper mb-[35px]">
@@ -1128,7 +1191,7 @@
                             <button>Отправить</button>
                         </div>
 
-                        <div class="flex items-start w-[710px]">
+                        <div class="flex items-start w-[710px] max-[765px]:w-full">
                             <input type="checkbox" id="consent" class="mt-1 mr-2">
                             <label for="consent" class=" text-[14px] font-light text-gray-400">
                                 Нажав кнопку, вы даете полное согласие на обработку персональных данных и соглашаетесь с
@@ -1137,7 +1200,8 @@
                         </div>
                     </form>
                 </div>
-                <img class="absolute right-[0px] bottom-[0]" src="./assets/svg/footer-top-right.svg" alt="">
+                <img class="absolute right-[0px] bottom-[0] max-[1024px]:w-[420px] max-[1024px]:h-[420px] max-[765px]:w-[320px] max-[765px]:h-[320px]"
+                    src="./assets/svg/footer-top-right.svg" alt="">
             </div>
             <img class="section-7-bg-left" src="./assets/img/section-7-bg-left.png" alt="">
             <img class="section-7-bg-center" src="./assets/img/section-7-bg-center.png" alt="">
@@ -1147,7 +1211,7 @@
 
         <!-- Section-7-Start -->
         <section id="section-8">
-            <div class="flex flex-col w-full px-[25px] py-[50px] ">
+            <div class="flex flex-col w-full px-[25px] py-[50px]">
                 <div class="flex items-start justify-between gap-[30px] flex-wrap mb-[50px]">
                     <div>
                         <h4 class="text-[23px] mb-[30px]">Каталог</h4>
@@ -1226,25 +1290,25 @@
 
     </div>
     <script>
-        let currentScroll = window.pageYOffset
-        let isScrolling
-        let scrollingSpeed = 1.5  // Adjust this value to change scroll speed
+        // let currentScroll = window.pageYOffset
+        // let isScrolling
+        // let scrollingSpeed = 1.5  // Adjust this value to change scroll speed
 
-        window.addEventListener('scroll', () => {
-            isScrolling = true
-        })
+        // window.addEventListener('scroll', () => {
+        //     isScrolling = true
+        // })
 
-        function smoothScroll() {
-            if (isScrolling) {
-                isScrolling = false
-                const targetScroll = window.pageYOffset
-                currentScroll = currentScroll + (targetScroll - currentScroll) * scrollingSpeed
-                window.scrollTo(0, currentScroll)
-            }
-            requestAnimationFrame(smoothScroll)
-        }
+        // function smoothScroll() {
+        //     if (isScrolling) {
+        //         isScrolling = false
+        //         const targetScroll = window.pageYOffset
+        //         currentScroll = currentScroll + (targetScroll - currentScroll) * scrollingSpeed
+        //         window.scrollTo(0, currentScroll)
+        //     }
+        //     requestAnimationFrame(smoothScroll)
+        // }
 
-        smoothScroll();
+        // smoothScroll();
     </script>
     <script>
 
@@ -1418,9 +1482,9 @@
         tl.to("#section-4", {
             y: 0,
             duration: 20,
-            ease: "none",
+            ease: "slow(0.7, 0.7, false)",
             onStart: () => gsap.to(".header", { backgroundColor: "#F4F7FF", duration: 0.5 })
-        })
+        }, "+=5")
             .to(".section-4-element", {
                 duration: 15,
                 ease: "power2.inOut"
@@ -1464,12 +1528,45 @@
                 ease: "power2.inOut"
             }, "#section-4")
 
+        if (window.innerWidth < 1024) {
+            gsap.utils.toArray(".scroll-element-4").forEach((element, index) => {
+                const initialPositions = [
+                    { height: '150px' },
+                    { height: '150px' },
+                    { height: '150px' },
+                    { height: '150px' }
+                ]
+
+                const initialPos = initialPositions[index % 4]
+
+                tl.fromTo(element,
+                    {
+                        height: initialPos.height,
+                        duration: 15,
+                    },
+                    {
+                        height: '400px',
+                        duration: 15,
+                        ease: "power2.out"
+                    },
+                    `+=1`
+                )
+                    .to(element, {
+                        height: '150px',
+                        duration: 15,
+                        ease: "power2.in"
+                    }, `>0.2`)
+            })
+        }
+
+
+
         // Section-5 and Section-6 animations
         tl.to("#section-5", {
             y: 0,
-            duration: 20,
-            ease: "none"
-        }, "+=8")
+            duration: 25,
+            ease: "slow(0.7, 0.7, false)",
+        }, "+=15")
             .to("#section-5-element", {
                 y: "-90%",
                 duration: 1
@@ -1527,6 +1624,34 @@
                 x: -220,
                 duration: 15
             }, "start")
+            .to(".section-6-vector-1", {
+                opacity: 1,
+            }, "-=10")
+            .to(".section-6-vector-2", {
+                opacity: 1,
+                x: () => window.innerWidth > 765 ? 10 : 0,
+                duration: 3,
+            }, "-=10")
+            .to(".section-6-vector-3", {
+                opacity: 1,
+                x: 0,
+                duration: 3,
+            }, "-=10")
+            .to(".section-6-vector-4", {
+                opacity: 1,
+                x: 0,
+                duration: 3,
+            }, "-=10")
+            .to(".section-6-vector-5", {
+                opacity: 1,
+                x: 0,
+                duration: 3,
+            }, "-=10")
+            .to(".section-6-vector-6", {
+                opacity: 1,
+                x: 0,
+                duration: 3,
+            }, "-=10")
             // .add("section6Complete")
             .to("#section-6-div-1", {
                 y: '-100%',
@@ -1591,7 +1716,7 @@
                 ease: "power2.inOut"
             }, "+=5")
             .to("#section-8", {
-                y: "40%",
+                y: () => window.innerWidth > 1024 ? "40%" : "0%",
                 duration: 35,
                 ease: "power2.inOut"
             }, "<")
