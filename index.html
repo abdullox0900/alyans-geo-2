@@ -1309,7 +1309,7 @@
     <script>
         let currentScroll = window.pageYOffset
         let isScrolling
-        let scrollingSpeed = () => window.innerWidth > 1024 ? 1.5 : 0.8
+        let scrollingSpeed = 1.5
 
         window.addEventListener('scroll', () => {
             isScrolling = true
@@ -1325,7 +1325,27 @@
             requestAnimationFrame(smoothScroll)
         }
 
-        smoothScroll();
+        if (window.innerWidth > 1024) {
+            smoothScroll()
+        } else {
+            let currentScroll = window.pageYOffset
+            let isScrolling
+            let scrollingSpeed = 5
+
+            window.addEventListener('scroll', () => {
+                isScrolling = true
+            })
+
+            function smoothScroll() {
+                if (isScrolling) {
+                    isScrolling = false
+                    const targetScroll = window.pageYOffset
+                    currentScroll = currentScroll + (targetScroll - currentScroll) * scrollingSpeed
+                    window.scrollTo(0, currentScroll)
+                }
+                requestAnimationFrame(smoothScroll)
+            }
+        }
     </script>
     <script>
 
