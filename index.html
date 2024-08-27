@@ -661,10 +661,27 @@
                 </div>
             </div>
             <div class="section-4-wrapper-mobile">
-                <div class="scroll-element-4">Element 1</div>
-                <div class="scroll-element-4">Element 2</div>
-                <div class="scroll-element-4">Element 3</div>
-                <div class="scroll-element-4">Element 4</div>
+                <div class="scroll-element-4">
+                    <span class="text-[45px] mb-[50px]">300+</span>
+                    <span class="text-[16px]">Выполненных проектов</span>
+                </div>
+                <div class="scroll-element-4">
+                    <span class="text-[45px] mb-[50px]">СРО</span>
+                    <span class="text-[16px]">В отношении особо опасных и технических сложных обьектов на изыскание и
+                        проектирование</span>
+                </div>
+                <div class="scroll-element-4">
+                    <span class="text-[45px] mb-[50px]">СРО</span>
+
+                    <span class="text-[16px] mb-[10px]">Постоянный участник выставок и конференций</span>
+                    <span class="text-[16px] underline mb-[10px]">Выставка в городе Москва</span>
+                    <span class="text-[16px] underline mb-[10px]">Выставка в городе Екатеринбург</span>
+                    <span class="text-[16px] underline">Выставка в городе Мытищи</span>
+                </div>
+                <div class="scroll-element-4">
+                    <span class="text-[45px] mb-[50px]">Оборудование</span>
+                    <span class="text-[16px]">Для статического зондирования и штамповых испытаний грунтов</span>
+                </div>
             </div>
 
         </section>
@@ -1290,25 +1307,25 @@
 
     </div>
     <script>
-        // let currentScroll = window.pageYOffset
-        // let isScrolling
-        // let scrollingSpeed = 1.5  // Adjust this value to change scroll speed
+        let currentScroll = window.pageYOffset
+        let isScrolling
+        let scrollingSpeed = () => window.innerWidth > 1024 ? 1.5 : 0.8
 
-        // window.addEventListener('scroll', () => {
-        //     isScrolling = true
-        // })
+        window.addEventListener('scroll', () => {
+            isScrolling = true
+        })
 
-        // function smoothScroll() {
-        //     if (isScrolling) {
-        //         isScrolling = false
-        //         const targetScroll = window.pageYOffset
-        //         currentScroll = currentScroll + (targetScroll - currentScroll) * scrollingSpeed
-        //         window.scrollTo(0, currentScroll)
-        //     }
-        //     requestAnimationFrame(smoothScroll)
-        // }
+        function smoothScroll() {
+            if (isScrolling) {
+                isScrolling = false
+                const targetScroll = window.pageYOffset
+                currentScroll = currentScroll + (targetScroll - currentScroll) * scrollingSpeed
+                window.scrollTo(0, currentScroll)
+            }
+            requestAnimationFrame(smoothScroll)
+        }
 
-        // smoothScroll();
+        smoothScroll();
     </script>
     <script>
 
